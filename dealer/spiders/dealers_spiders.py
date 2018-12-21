@@ -4,7 +4,7 @@ import sys
 from scrapy.selector import Selector
 
 class DealerSpider(scrapy.Spider):
-    name = 'dealer'
+    name = 'dealers'
     base_url = 'https://www.supralift.com'
     start_urls = [
         'https://www.supralift.com/uk/dealer-overview?_cid=640bdaf9-4c0f-42eb-93aa-38b8ed2f1d3c'
@@ -19,15 +19,10 @@ class DealerSpider(scrapy.Spider):
     }
 
     def parse(self, response):
-        rows = response.css(
-            'div.col-md-9 > div > div > div > div.row.margin_bottom_small.overflowhid').extract()
-        for row in rows:
-            row_list = Selector(text=row).css(
-                'div.col-md-5.border_right.maxhelem.clickable > a::attr(href), '
-                'div > div > div > div.row > div > div.sale:not([class^="sale grey"])::text').extract()
-            if len(row_list) == 2:
-                page_url = self.base_url + row_list[0]
-                yield scrapy.Request(page_url, callback=self.dealerparse)
+        rows = response.css('div > div > div.col-md-5.border_right.maxhelem.clickable > a::attr(href)').extract()
+        for link in rows:
+            dealer_profile = response.urljoin(link)
+            yield scrapy.Request(dealer_profile, callback=self.dealerparse)
 
         pagination = response.css(
             'div.content_element.elem_row > form > div:nth-child(4) > div > a::attr(href)').extract_first()
@@ -50,7 +45,11 @@ class DealerSpider(scrapy.Spider):
 
         yield {
             'url': response.url,
-            'company name': company_info,
+            'company name': company_info[0],
+            'address': company_info[1],
+            'city': company_info[2].split(' ')[1],
+            'postal': company_info[2].split(' ')[0],
+            'country': company_info[3],
             'website': website,
             'brands': brands,
             'contact': contact_info
