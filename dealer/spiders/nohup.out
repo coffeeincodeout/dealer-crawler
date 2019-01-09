@@ -1501,3 +1501,1373 @@
  'scheduler/enqueued/memory': 293,
  'start_time': datetime.datetime(2018, 12, 15, 17, 31, 49, 494288)}
 2018-12-15 13:18:13 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-01-08 18:24:00 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: dealer)
+2019-01-08 18:24:00 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.7 (default, Oct 22 2018, 11:32:17) - [GCC 8.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Linux-4.15.0-43-generic-x86_64-with-Ubuntu-18.04-bionic
+2019-01-08 18:24:00 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'BOT_NAME': 'dealer', 'CONCURRENT_REQUESTS': 1, 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'DOWNLOAD_DELAY': 8, 'FEED_FORMAT': 'csv', 'FEED_URI': '/home/coffeeincodeout/developer/dealer-crawler/dealer/dealer/tmp/grayeddealer.csv', 'NEWSPIDER_MODULE': 'dealer.spiders', 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408], 'RETRY_TIMES': 10, 'SPIDER_MODULES': ['dealer.spiders']}
+2019-01-08 18:24:00 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2019-01-08 18:24:00 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy_proxies.RandomProxy',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'dealer.middlewares.DealerDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-01-08 18:24:00 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-01-08 18:24:00 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-01-08 18:24:00 [scrapy.core.engine] INFO: Spider opened
+2019-01-08 18:24:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-01-08 18:24:00 [grayed] INFO: Spider opened: grayed
+2019-01-08 18:24:00 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-01-08 18:24:00 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:24:00 [scrapy.proxies] DEBUG: Using proxy <http://176.110.154.119:48337>, 221 proxies left
+2019-01-08 18:24:00 [scrapy_fake_useragent.middleware] DEBUG: Assign User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20120101 Firefox/29.0 to Proxy None
+2019-01-08 18:24:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/country-list> (referer: None)
+2019-01-08 18:24:01 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:24:01 [scrapy.proxies] DEBUG: Using proxy <http://1.32.59.217:46288>, 221 proxies left
+2019-01-08 18:24:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Australia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:24:07 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:24:07 [scrapy.proxies] DEBUG: Using proxy <http://95.158.153.57:49753>, 221 proxies left
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'A. B & J Forklifts', 'address': '3189 Moorabbin', 'country': 'Australia'}
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'A1 Forklift Shop', 'address': '4078 Forrest Lake', 'country': 'Australia'}
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'AAA Equipment Pty Ltd', 'address': '2446 Wauchope, NSW', 'country': 'Australia'}
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'Ace Access & Scaffolds ', 'address': '2322 Tomago', 'country': 'Australia'}
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'Adapt-A-Lift Rentals & Sales ', 'address': '3171 Melbourne', 'country': 'Australia'}
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'All Lift Fork Lift Services', 'address': '3803 Hellam', 'country': 'Australia'}
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'All Lift Forklifts', 'address': '1660 Mona Vale, NSW', 'country': 'Australia'}
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'Allied Forklifts ', 'address': '6090 Malaga, WA', 'country': 'Australia'}
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'A-One Lift Trucks Services Pty Ltd ', 'address': '2770 Minchinbury, NSW', 'country': 'Australia'}
+2019-01-08 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Australia.html>
+{'company': 'Aussie Forklift Repairs', 'address': '2148 Kings Park, NSW', 'country': 'Australia'}
+2019-01-08 18:24:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:24:14 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:24:14 [scrapy.proxies] DEBUG: Using proxy <http://170.80.36.17:55197>, 221 proxies left
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'Akomkar ODO', 'address': '220073 Minsk', 'country': 'White-Russia'}
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'AKOMKAR ODO', 'address': '220073 Minsk', 'country': 'White-Russia'}
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'Belelektro', 'address': '223053 Minskij rajon', 'country': 'White-Russia'}
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'BELPROMIMPEKS RUP', 'address': '220026 Minsk', 'country': 'White-Russia'}
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'BELPROMIMPEKS RUP (Mogelevskij filial)', 'address': '212011 Mogelev', 'country': 'White-Russia'}
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'BOBCAT', 'address': '220012 Minsk', 'country': 'White-Russia'}
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'Cartrim Ltd.', 'address': 'Minsk', 'country': 'White-Russia'}
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'Forent Ltd', 'address': '220070 Minsk', 'country': 'White-Russia'}
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'JARMAR UP', 'address': '220012 Minsk', 'country': 'White-Russia'}
+2019-01-08 18:24:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/White-Russia.html>
+{'company': 'Jungheinrich - ODO "EUROPODJEM"', 'address': '220018 Minsk', 'country': 'White-Russia'}
+2019-01-08 18:24:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Vietnam.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:24:22 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:24:22 [scrapy.proxies] DEBUG: Using proxy <http://112.78.178.2:36530>, 221 proxies left
+2019-01-08 18:24:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Vietnam.html>
+{'company': 'DPT LTD.', 'address': 'HoChiMinh City', 'country': 'Vietnam'}
+2019-01-08 18:24:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Vietnam.html>
+{'company': 'Truong Sa industrial machinery co.,ltd', 'address': '700000 Ho Chi Minh', 'country': 'Vietnam'}
+2019-01-08 18:24:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Vietnam.html>
+{'company': 'Vina Forklift Co.', 'address': '03148 Ha noi', 'country': 'Vietnam'}
+2019-01-08 18:24:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Vietnam.html>
+{'company': 'VinH Dao Company', 'address': '700100 Ho Chi Minh', 'country': 'Vietnam'}
+2019-01-08 18:24:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Venezuela.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:24:34 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:24:34 [scrapy.proxies] DEBUG: Using proxy <http://89.111.211.36:38596>, 221 proxies left
+2019-01-08 18:24:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Venezuela.html>
+{'company': 'Antonio Guzzo', 'address': 'Caracas', 'country': 'Venezuela'}
+2019-01-08 18:24:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Venezuela.html>
+{'company': 'Rentacarga Oriente C.A.', 'address': '8150 Puerto Ordaz, Bolívar', 'country': 'Venezuela'}
+2019-01-08 18:24:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Venezuela.html>
+{'company': 'Representaciones H. Ludemann c.a', 'address': '61587 -', 'country': 'Venezuela'}
+2019-01-08 18:24:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Venezuela.html>
+{'company': 'Rimeri C.A.', 'address': 'Caracas', 'country': 'Venezuela'}
+2019-01-08 18:24:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Vatican-City.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:24:41 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:24:41 [scrapy.proxies] DEBUG: Using proxy <http://77.108.45.170:8888>, 221 proxies left
+2019-01-08 18:24:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/USA.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:24:49 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:24:49 [scrapy.proxies] DEBUG: Using proxy <http://112.78.178.2:36530>, 221 proxies left
+2019-01-08 18:24:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/USA.html>
+{'company': 'A. Miranda Forklift', 'address': '23231 Richmond, VA', 'country': 'USA'}
+2019-01-08 18:24:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/USA.html>
+{'company': 'Advanced Material Handling', 'address': 'Irving, Texas', 'country': 'USA'}
+2019-01-08 18:24:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/USA.html>
+{'company': 'Atlas International Lift Trucks ', 'address': '841115 Salt Lake City, UT', 'country': 'USA'}
+2019-01-08 18:24:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/USA.html>
+{'company': 'Balint/Ryder Handling Equipment Corp.', 'address': '60176 Schiller Park, IL', 'country': 'USA'}
+2019-01-08 18:24:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/USA.html>
+{'company': 'Bennett Material Handling, Inc.', 'address': '46528 Goshen, IN', 'country': 'USA'}
+2019-01-08 18:24:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/USA.html>
+{'company': 'Binner-Peters Equipment Corp', 'address': '55343 Hopkins, MN', 'country': 'USA'}
+2019-01-08 18:24:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/USA.html>
+{'company': 'Black Equipment Co., Inc.', 'address': '14606 Rochester, NY', 'country': 'USA'}
+2019-01-08 18:24:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/USA.html>
+{'company': 'Bohnert Equipment Co., Inc.', 'address': '47716-5286 Evansville, IN', 'country': 'USA'}
+2019-01-08 18:24:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/USA.html>
+{'company': 'Boltz Industrial Products Inc.', 'address': '40203 Louisville, KY', 'country': 'USA'}
+2019-01-08 18:25:00 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 7 pages/min), scraped 37 items (at 37 items/min)
+2019-01-08 18:25:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Uruguay.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:25:01 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:25:01 [scrapy.proxies] DEBUG: Using proxy <http://1.10.186.211:48744>, 221 proxies left
+2019-01-08 18:25:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Uruguay.html>
+{'company': 'Corin Rent Up', 'address': 'Montevideo', 'country': 'Uruguay'}
+2019-01-08 18:25:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Uruguay.html>
+{'company': 'Corin S.A.', 'address': '12300 Montevideo', 'country': 'Uruguay'}
+2019-01-08 18:25:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Uruguay.html>
+{'company': 'SISLER S.A.', 'address': '11600 Montevideo', 'country': 'Uruguay'}
+2019-01-08 18:25:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Uruguay.html>
+{'company': 'Uranel S.A.', 'address': '11600 Parque de los Aliados', 'country': 'Uruguay'}
+2019-01-08 18:25:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Uruguay.html>
+{'company': 'Urostar S.A.', 'address': '11800 Montevideo', 'country': 'Uruguay'}
+2019-01-08 18:25:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/United-Kingdom.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:25:07 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:25:07 [scrapy.proxies] DEBUG: Using proxy <http://181.118.155.38:37255>, 221 proxies left
+2019-01-08 18:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/United-Arab-Emirates.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:25:19 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:25:19 [scrapy.proxies] DEBUG: Using proxy <http://36.66.124.227:46661>, 221 proxies left
+2019-01-08 18:25:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/United-Arab-Emirates.html>
+{'company': 'AL SHIRAWI ENTERPRISES', 'address': 'Dubai', 'country': 'United-Arab-Emirates'}
+2019-01-08 18:25:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/United-Arab-Emirates.html>
+{'company': 'Emirates Forklifts Rental LLC', 'address': 'Sharjah', 'country': 'United-Arab-Emirates'}
+2019-01-08 18:25:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/United-Arab-Emirates.html>
+{'company': 'F.A.P. Co. General Trading WLL', 'address': 'Dubai', 'country': 'United-Arab-Emirates'}
+2019-01-08 18:25:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/United-Arab-Emirates.html>
+{'company': 'Hala', 'address': 'Sharjah', 'country': 'United-Arab-Emirates'}
+2019-01-08 18:25:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/United-Arab-Emirates.html>
+{'company': 'International Enterprice', 'address': 'Abu Dhabi', 'country': 'United-Arab-Emirates'}
+2019-01-08 18:25:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/United-Arab-Emirates.html>
+{'company': 'K K Agarwal', 'address': 'Sharjah', 'country': 'United-Arab-Emirates'}
+2019-01-08 18:25:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/United-Arab-Emirates.html>
+{'company': 'ZITC', 'address': '124740 Dubai', 'country': 'United-Arab-Emirates'}
+2019-01-08 18:25:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:25:27 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:25:27 [scrapy.proxies] DEBUG: Using proxy <http://38.99.116.136:32795>, 221 proxies left
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Agro-Soyuz-Terminal CO. LTD', 'address': "52005 Slobozhans'ke", 'country': 'Ukraine'}
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Agrostroitelnij Aljans "ASTRA"', 'address': '08162 smt Tschabani', 'country': 'Ukraine'}
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Alko', 'address': '65043 Odessa', 'country': 'Ukraine'}
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Alma MPP', 'address': '79000 Lvov', 'country': 'Ukraine'}
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Altreks', 'address': '03142 Kiev', 'country': 'Ukraine'}
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Arial-zentr', 'address': '56200 Nikolaev', 'country': 'Ukraine'}
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Avto-invest-aljans', 'address': '39600 Kremenchug', 'country': 'Ukraine'}
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Avtozentr', 'address': '87500 Mariupol', 'country': 'Ukraine'}
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Balkan Sich', 'address': '69083 Saporoshje', 'country': 'Ukraine'}
+2019-01-08 18:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ukraine.html>
+{'company': 'Balkan-Dnepr', 'address': '49019 Dnepropetrovsk', 'country': 'Ukraine'}
+2019-01-08 18:25:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:25:39 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:25:39 [scrapy.proxies] DEBUG: Using proxy <http://112.78.178.2:36530>, 221 proxies left
+2019-01-08 18:25:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html>
+{'company': 'Akkuslar IS Mak. Yedek Parca San.', 'address': '34670 Ümraniye-ISTANBUL', 'country': 'Turkey'}
+2019-01-08 18:25:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html>
+{'company': 'Aksa Group', 'address': 'Istanbul', 'country': 'Turkey'}
+2019-01-08 18:25:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html>
+{'company': 'Aksugiller is Mak. San. Tin. A.S.', 'address': 'Istanbul', 'country': 'Turkey'}
+2019-01-08 18:25:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html>
+{'company': 'Anadolu Makina Ltd. Sti.', 'address': 'Istanbul', 'country': 'Turkey'}
+2019-01-08 18:25:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html>
+{'company': 'Ankara Istif Makineleri San. ve Tic. ltd.sti.', 'address': 'Ankara', 'country': 'Turkey'}
+2019-01-08 18:25:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html>
+{'company': 'APA MAKINA SANAYI VE TIC A.S.', 'address': 'ANKARA', 'country': 'Turkey'}
+2019-01-08 18:25:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html>
+{'company': 'Arlift Makine San Tic Ltd.', 'address': '01310 Yüregir/Adana ', 'country': 'Turkey'}
+2019-01-08 18:25:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html>
+{'company': 'Arser Is Makineleri A.S', 'address': '34671 Istanbul', 'country': 'Turkey'}
+2019-01-08 18:25:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Turkey.html>
+{'company': 'Asmas Agir Sanayi Makinalari A.S', 'address': '81090 Istabul', 'country': 'Turkey'}
+2019-01-08 18:25:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:25:48 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:25:48 [scrapy.proxies] DEBUG: Using proxy <http://170.81.33.174:30492>, 221 proxies left
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'BOUAZIZ JAMEL', 'address': 'OUED CHABOUNI', 'country': 'Tunisia'}
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'Carhhago Ceramic', 'address': 'Ez-zahra Tunis', 'country': 'Tunisia'}
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'CHARIOT', 'address': 'SOUKRA', 'country': 'Tunisia'}
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'DALMAS', 'address': 'Tunis', 'country': 'Tunisia'}
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'Dorémail  Carreaux céramiques', 'address': 'Les Berges du lac', 'country': 'Tunisia'}
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'Inter-Parts,Sarl (Groupe Loukil)', 'address': 'Tunis', 'country': 'Tunisia'}
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'Les Profilés Aluminium du Centre', 'address': 'Ksar Hellal', 'country': 'Tunisia'}
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'Location Hilali', 'address': 'Tunis', 'country': 'Tunisia'}
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'Matech', 'address': 'Tunis', 'country': 'Tunisia'}
+2019-01-08 18:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tunisia.html>
+{'company': 'MFGT Materiel Ferroviaire Ganz Tunisie,SA', 'address': 'Gabes Bab Bhar', 'country': 'Tunisia'}
+2019-01-08 18:26:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Togo.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:26:00 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:26:00 [scrapy.proxies] DEBUG: Using proxy <http://91.235.186.91:37757>, 221 proxies left
+2019-01-08 18:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Togo.html>
+{'company': 'CAMIN ', 'address': 'Cotonou / BENIN', 'country': 'Togo'}
+2019-01-08 18:26:00 [scrapy.extensions.logstats] INFO: Crawled 14 pages (at 7 pages/min), scraped 79 items (at 42 items/min)
+2019-01-08 18:26:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Thailand.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:26:08 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:26:08 [scrapy.proxies] DEBUG: Using proxy <http://190.14.235.61:36832>, 221 proxies left
+2019-01-08 18:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Thailand.html>
+{'company': 'A Plus Matrix International Corp.', 'address': '10270 Samut Prakan', 'country': 'Thailand'}
+2019-01-08 18:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Thailand.html>
+{'company': 'ALLA Co., Ltd', 'address': '330 Taoyuan City', 'country': 'Thailand'}
+2019-01-08 18:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Thailand.html>
+{'company': 'JL Forklift & Parts Co. Ltd.', 'address': '10250 Bangkok', 'country': 'Thailand'}
+2019-01-08 18:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Thailand.html>
+{'company': 'Thai-Lian Group Ltd.', 'address': '11120 Nonthaburi', 'country': 'Thailand'}
+2019-01-08 18:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Tanzania.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:26:19 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:26:19 [scrapy.proxies] DEBUG: Using proxy <http://1.10.185.133:46783>, 221 proxies left
+2019-01-08 18:26:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Tanzania.html>
+{'company': 'Mining Agriculture& Construction ', 'address': 'Dar Es Salam', 'country': 'Tanzania'}
+2019-01-08 18:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Taiwan.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:26:31 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:26:31 [scrapy.proxies] DEBUG: Using proxy <http://212.98.158.245:48263>, 221 proxies left
+2019-01-08 18:26:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Taiwan.html>
+{'company': 'Power Handling Co. Ltd.', 'address': '33757 Dayuan', 'country': 'Taiwan'}
+2019-01-08 18:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Syria.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:26:41 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:26:41 [scrapy.proxies] DEBUG: Using proxy <http://103.47.94.14:8080>, 221 proxies left
+2019-01-08 18:26:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Syria.html>
+{'company': 'Poly Engineering Products', 'address': 'Damascus', 'country': 'Syria'}
+2019-01-08 18:26:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Syria.html>
+{'company': 'SAAD & Co for machinery and trade', 'address': '30890 Damascus', 'country': 'Syria'}
+2019-01-08 18:26:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Switzerland.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:26:51 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:26:51 [scrapy.proxies] DEBUG: Using proxy <http://41.77.211.194:8888>, 221 proxies left
+2019-01-08 18:26:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Switzerland.html>
+{'company': 'A. Leiser AG - Maschinen und Fahrzeuge', 'address': '4901 Langenthal', 'country': 'Switzerland'}
+2019-01-08 18:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Sweden.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:26:58 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:26:58 [scrapy.proxies] DEBUG: Using proxy <http://181.118.155.38:37255>, 221 proxies left
+2019-01-08 18:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Sweden.html>
+{'company': 'ABEKO SERVICE AB', 'address': '232 61 Arlöv /Malmö', 'country': 'Sweden'}
+2019-01-08 18:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Sweden.html>
+{'company': 'ALL-TRUCK AT AB', 'address': '701 13 Örebro', 'country': 'Sweden'}
+2019-01-08 18:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Sweden.html>
+{'company': 'Alltruck Material', 'address': '215 79 Malmö', 'country': 'Sweden'}
+2019-01-08 18:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Sweden.html>
+{'company': 'Allyft i Östergötland AB', 'address': '41878 Göteborg', 'country': 'Sweden'}
+2019-01-08 18:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Sweden.html>
+{'company': 'altiTruck AB', 'address': '19572 Rosersberg', 'country': 'Sweden'}
+2019-01-08 18:27:00 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 6 pages/min), scraped 93 items (at 14 items/min)
+2019-01-08 18:27:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Sri-Lanka.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:27:09 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:27:09 [scrapy.proxies] DEBUG: Using proxy <http://102.164.252.24:47523>, 221 proxies left
+2019-01-08 18:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Sri-Lanka.html>
+{'company': 'DIMO', 'address': '14 Colombo', 'country': 'Sri-Lanka'}
+2019-01-08 18:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Sri-Lanka.html>
+{'company': 'Scott International (PVT) Ltd.', 'address': 'Mahabage Ragama', 'country': 'Sri-Lanka'}
+2019-01-08 18:27:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Spain.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:27:19 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:27:19 [scrapy.proxies] DEBUG: Using proxy <http://182.52.74.76:34084>, 221 proxies left
+2019-01-08 18:27:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/South-Korea.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:27:25 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:27:25 [scrapy.proxies] DEBUG: Using proxy <http://85.95.226.52:3128>, 221 proxies left
+2019-01-08 18:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Korea.html>
+{'company': 'Halla-Cinox Co., LTD.', 'address': '121-886 Seoul', 'country': 'South-Korea'}
+2019-01-08 18:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Korea.html>
+{'company': 'Soosung Lift Mfg. Co., Ltd.', 'address': '343-822 Chungnam', 'country': 'South-Korea'}
+2019-01-08 18:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Korea.html>
+{'company': 'Wookun Corporation', 'address': '404-170 Seo-Gu Incheon', 'country': 'South-Korea'}
+2019-01-08 18:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:27:35 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:27:35 [scrapy.proxies] DEBUG: Using proxy <http://41.57.6.85:8080>, 221 proxies left
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'A SQUARE FORKLIFT (PTY) LTD', 'address': 'Alrode South Alberton', 'country': 'South-Africa'}
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'Action Equipment Company', 'address': '1613 Sebenza-Edenvale', 'country': 'South-Africa'}
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'Avis Rent a Forklift', 'address': '1460 Boksburg', 'country': 'South-Africa'}
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'Barloworld Handling', 'address': '7535 Bellville South/Cape Town', 'country': 'South-Africa'}
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'C D Forklift Services', 'address': 'Cape Town', 'country': 'South-Africa'}
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'CAPE FORKLIFT SALES & SERVICES', 'address': '7441 Montague Gdns Ind', 'country': 'South-Africa'}
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'Criterion Equipment (PTY) Ltd.', 'address': '7499 Parow', 'country': 'South-Africa'}
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'Demo Forklifts', 'address': 'BoksBurg, 1459 Jet Park', 'country': 'South-Africa'}
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'East Coast Forklifts', 'address': 'P.O.Box 575 Pinetown', 'country': 'South-Africa'}
+2019-01-08 18:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/South-Africa.html>
+{'company': 'Ex-site (pty) LTD', 'address': 'Heriotdale', 'country': 'South-Africa'}
+2019-01-08 18:27:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Slovenia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:27:46 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:27:46 [scrapy.proxies] DEBUG: Using proxy <http://177.54.135.101:53281>, 221 proxies left
+2019-01-08 18:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovenia.html>
+{'company': 'A servis d.o.o', 'address': '2000 Maribor', 'country': 'Slovenia'}
+2019-01-08 18:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovenia.html>
+{'company': 'Arko d.o.o.', 'address': '1236 Trzin', 'country': 'Slovenia'}
+2019-01-08 18:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovenia.html>
+{'company': 'ARTEX tovarna skladiscne opreme vilicarjev d.o.o', 'address': '1000 Ljubljana', 'country': 'Slovenia'}
+2019-01-08 18:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovenia.html>
+{'company': 'Avtobiro b d.o.o', 'address': '9000 Murska Sobota', 'country': 'Slovenia'}
+2019-01-08 18:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovenia.html>
+{'company': 'Avtotehna d.o.o', 'address': '9240 Ljutomer', 'country': 'Slovenia'}
+2019-01-08 18:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovenia.html>
+{'company': 'Center d.o.o', 'address': '9220 Lendava', 'country': 'Slovenia'}
+2019-01-08 18:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovenia.html>
+{'company': 'Comp.ak d.o.o', 'address': '1000 Ljubljana', 'country': 'Slovenia'}
+2019-01-08 18:27:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Slovakia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:27:58 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:27:58 [scrapy.proxies] DEBUG: Using proxy <http://103.115.128.14:37788>, 221 proxies left
+2019-01-08 18:27:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovakia.html>
+{'company': 'Achapur, s.r.o.', 'address': '903 01 Senec', 'country': 'Slovakia'}
+2019-01-08 18:27:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovakia.html>
+{'company': 'AGRI FAIR - POWER LIFT spol. s r. o.', 'address': '949 07 Nitra', 'country': 'Slovakia'}
+2019-01-08 18:27:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovakia.html>
+{'company': 'AKU servis spol. s r. o.', 'address': '04001 Košice', 'country': 'Slovakia'}
+2019-01-08 18:27:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovakia.html>
+{'company': 'Alexander Hamar - Alpex', 'address': '94905 Nitra', 'country': 'Slovakia'}
+2019-01-08 18:27:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovakia.html>
+{'company': 'Aligatorr Automotive s. r. o.', 'address': '90613 Brezová pod Bradlom', 'country': 'Slovakia'}
+2019-01-08 18:27:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovakia.html>
+{'company': 'a-max s. r. o.', 'address': '960 01 Zvolen', 'country': 'Slovakia'}
+2019-01-08 18:27:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovakia.html>
+{'company': 'AM.TEC manipulacná technika s.r.o.', 'address': '95601 Bojná', 'country': 'Slovakia'}
+2019-01-08 18:27:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Slovakia.html>
+{'company': 'Autogabriella Malotrkatory s.r.o.', 'address': '85103 Bratislava', 'country': 'Slovakia'}
+2019-01-08 18:28:00 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 6 pages/min), scraped 123 items (at 30 items/min)
+2019-01-08 18:28:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Singapore.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:28:08 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:28:08 [scrapy.proxies] DEBUG: Using proxy <http://103.113.107.89:53281>, 221 proxies left
+2019-01-08 18:28:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Singapore.html>
+{'company': 'Beng Siang Machinery Pte Ltd', 'address': '508720 -', 'country': 'Singapore'}
+2019-01-08 18:28:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Singapore.html>
+{'company': 'Cargotec CHS Asia Pacific', 'address': '729145 Singapur', 'country': 'Singapore'}
+2019-01-08 18:28:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Singapore.html>
+{'company': 'Goldbell Engineering', 'address': '618299 Singapore', 'country': 'Singapore'}
+2019-01-08 18:28:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Singapore.html>
+{'company': 'Mashgate Pte Ltd', 'address': '638894 -', 'country': 'Singapore'}
+2019-01-08 18:28:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Singapore.html>
+{'company': 'PDI Industry', 'address': '757700 Singapore', 'country': 'Singapore'}
+2019-01-08 18:28:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:28:18 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:28:18 [scrapy.proxies] DEBUG: Using proxy <http://189.51.98.69:34627>, 221 proxies left
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'ABD Komerc', 'address': '11211 Beograd', 'country': 'Serbia'}
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'Balkancar', 'address': '11080 Zemun ', 'country': 'Serbia'}
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'BEST-GOD D.O.O', 'address': '11506 Konatice', 'country': 'Serbia'}
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'Bonver Group', 'address': '11210 Beograd', 'country': 'Serbia'}
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'Browell d.o.o.', 'address': '21400 Bačka Palanka', 'country': 'Serbia'}
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'Cinimex-AZ d.o.o.', 'address': '18000 Nis', 'country': 'Serbia'}
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'COMACO GROUP', 'address': '11000 Belgrade', 'country': 'Serbia'}
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'Delta MC', 'address': '11000 Belgrad', 'country': 'Serbia'}
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'Dunav Export-Import d.o.o.', 'address': '22304 Novi Banovci', 'country': 'Serbia'}
+2019-01-08 18:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Serbia.html>
+{'company': 'Euro Servis', 'address': '2100 Srbija', 'country': 'Serbia'}
+2019-01-08 18:28:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Senegal.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:28:28 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:28:28 [scrapy.proxies] DEBUG: Using proxy <http://175.29.177.126:41549>, 221 proxies left
+2019-01-08 18:28:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Senegal.html>
+{'company': 'SAUDEQUIP', 'address': 'DAKAR', 'country': 'Senegal'}
+2019-01-08 18:28:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Saudi-Arabia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:28:33 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:28:33 [scrapy.proxies] DEBUG: Using proxy <http://210.5.106.202:60156>, 221 proxies left
+2019-01-08 18:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Saudi-Arabia.html>
+{'company': 'Abahsain', 'address': '31952 Al Khurmah', 'country': 'Saudi-Arabia'}
+2019-01-08 18:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Saudi-Arabia.html>
+{'company': 'Al Burkan Machinery & Heavy Equipments(LLC) - Dubai', 'address': '20531 Dubai - UAE', 'country': 'Saudi-Arabia'}
+2019-01-08 18:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Saudi-Arabia.html>
+{'company': 'Al-Iman for Contracting  Trading', 'address': '31421 Dammam', 'country': 'Saudi-Arabia'}
+2019-01-08 18:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Saudi-Arabia.html>
+{'company': 'Arabian Auto Agency', 'address': '2874-23441 Jeddah', 'country': 'Saudi-Arabia'}
+2019-01-08 18:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Saudi-Arabia.html>
+{'company': 'Modern Field Equipment - Dubai', 'address': '20531 Dubai - UAE', 'country': 'Saudi-Arabia'}
+2019-01-08 18:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Saudi-Arabia.html>
+{'company': 'Saudi Arabian Markets LTD', 'address': '11411 Riyadh', 'country': 'Saudi-Arabia'}
+2019-01-08 18:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Saudi-Arabia.html>
+{'company': 'Zahid Tractor', 'address': '21492 Jeddah', 'country': 'Saudi-Arabia'}
+2019-01-08 18:28:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Russia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:28:44 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:28:44 [scrapy.proxies] DEBUG: Using proxy <http://206.130.141.255:55130>, 221 proxies left
+2019-01-08 18:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Russia.html>
+{'company': '4K', 'address': '121353 Moscow', 'country': 'Russia'}
+2019-01-08 18:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Russia.html>
+{'company': 'Ammir Trade AMT ', 'address': '117449 Moskau', 'country': 'Russia'}
+2019-01-08 18:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Russia.html>
+{'company': 'Antal ', 'address': '119146 Moscow', 'country': 'Russia'}
+2019-01-08 18:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Russia.html>
+{'company': 'AO RUSSTRANS', 'address': '620017 Ekaterinburg', 'country': 'Russia'}
+2019-01-08 18:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Russia.html>
+{'company': 'Ar-Vest ', 'address': '109088 Moskau', 'country': 'Russia'}
+2019-01-08 18:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Russia.html>
+{'company': 'AvtoTraktorSpezTechnika', 'address': '332026 Orel', 'country': 'Russia'}
+2019-01-08 18:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Russia.html>
+{'company': 'Balkancarpodem . Moscow Office', 'address': '428010 Cheboksari', 'country': 'Russia'}
+2019-01-08 18:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Russia.html>
+{'company': 'Balttechservice', 'address': '119519 Moscow', 'country': 'Russia'}
+2019-01-08 18:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Russia.html>
+{'company': 'Bulcar', 'address': '198005 S-Petersburg', 'country': 'Russia'}
+2019-01-08 18:28:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Romania.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:28:50 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:28:50 [scrapy.proxies] DEBUG: Using proxy <http://118.174.220.154:55124>, 221 proxies left
+2019-01-08 18:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Romania.html>
+{'company': 'A.E.G.-TECH SRL', 'address': '062203 Bucuresti', 'country': 'Romania'}
+2019-01-08 18:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Romania.html>
+{'company': 'Algo Import Export srl', 'address': '1007059 Tătărani', 'country': 'Romania'}
+2019-01-08 18:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Romania.html>
+{'company': 'Armstrong Elevatoare', 'address': 'RO-087015 Judet Giurgiu', 'country': 'Romania'}
+2019-01-08 18:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Romania.html>
+{'company': 'Balkan Ro Motors srl', 'address': '500157 Brasov', 'country': 'Romania'}
+2019-01-08 18:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Romania.html>
+{'company': 'BERGERAT MONNOYEUR SRL', 'address': '120017 Buzau', 'country': 'Romania'}
+2019-01-08 18:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Romania.html>
+{'company': 'Carpatlift', 'address': '061316 Bucuresti', 'country': 'Romania'}
+2019-01-08 18:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Romania.html>
+{'company': 'COMAT', 'address': '117715 Stefanesti', 'country': 'Romania'}
+2019-01-08 18:29:00 [scrapy.extensions.logstats] INFO: Crawled 32 pages (at 6 pages/min), scraped 162 items (at 39 items/min)
+2019-01-08 18:29:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Rep.-of-Macedonia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:29:00 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:29:00 [scrapy.proxies] DEBUG: Using proxy <http://117.240.135.42:56852>, 221 proxies left
+2019-01-08 18:29:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Rep.-of-Macedonia.html>
+{'company': 'Deni International', 'address': '1000 Skopje', 'country': 'Rep.-of-Macedonia'}
+2019-01-08 18:29:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Rep.-of-Macedonia.html>
+{'company': 'Straus Company LTD', 'address': '1000 Skopje', 'country': 'Rep.-of-Macedonia'}
+2019-01-08 18:29:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Rep.-of-Macedonia.html>
+{'company': 'Termalift ', 'address': '1300 Kumanovo', 'country': 'Rep.-of-Macedonia'}
+2019-01-08 18:29:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Qatar.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:29:12 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:29:12 [scrapy.proxies] DEBUG: Using proxy <http://77.240.101.148:57140>, 221 proxies left
+2019-01-08 18:29:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Qatar.html>
+{'company': 'Jaidah Motors & Trading CO.', 'address': 'Doha', 'country': 'Qatar'}
+2019-01-08 18:29:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Portugal.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:29:17 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:29:17 [scrapy.proxies] DEBUG: Using proxy <http://181.40.40.166:38684>, 221 proxies left
+2019-01-08 18:29:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Portugal.html>
+{'company': 'A J Golcalves de Moraes Ltda', 'address': '2729-015 Mem Martins (Lisboa)', 'country': 'Portugal'}
+2019-01-08 18:29:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Portugal.html>
+{'company': 'AAC-Empilhadores Lda.', 'address': '2890-182 Alcochete', 'country': 'Portugal'}
+2019-01-08 18:29:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Portugal.html>
+{'company': 'Alfaland Portugal (Ex- Iberlift)', 'address': '4470-108 Gueifães,  Maia', 'country': 'Portugal'}
+2019-01-08 18:29:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Portugal.html>
+{'company': 'Almaque transportes e alugueis de Maquinas', 'address': '2635-448 Rio de Mouro', 'country': 'Portugal'}
+2019-01-08 18:29:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Portugal.html>
+{'company': 'Aminostar, Ltd.', 'address': '1900 319 Lisboa', 'country': 'Portugal'}
+2019-01-08 18:29:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Portugal.html>
+{'company': 'António Fernando Abreu Miranda Soc. Unip. Lda.', 'address': '3801-101 Aveiro - Esgueira', 'country': 'Portugal'}
+2019-01-08 18:29:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Poland.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:29:22 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:29:22 [scrapy.proxies] DEBUG: Using proxy <http://158.181.16.205:54820>, 221 proxies left
+2019-01-08 18:29:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Philippines.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:29:31 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:29:31 [scrapy.proxies] DEBUG: Using proxy <http://103.106.33.254:33843>, 221 proxies left
+2019-01-08 18:29:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Peru.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:29:44 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:29:44 [scrapy.proxies] DEBUG: Using proxy <http://85.95.226.52:3128>, 221 proxies left
+2019-01-08 18:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Peru.html>
+{'company': 'Dercomaq', 'address': 'Lima', 'country': 'Peru'}
+2019-01-08 18:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Peru.html>
+{'company': 'Gruas y Montacargas MIURA', 'address': '15022 Cercado de Lima', 'country': 'Peru'}
+2019-01-08 18:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Peru.html>
+{'company': 'Lift Truck Perú S.A.', 'address': 'Ate, Lima', 'country': 'Peru'}
+2019-01-08 18:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Peru.html>
+{'company': 'Malvex Del Peru S.A.', 'address': 'Santa Catalina - Lima 13', 'country': 'Peru'}
+2019-01-08 18:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Peru.html>
+{'company': 'Maquiferia S.A.C.', 'address': 'Lima', 'country': 'Peru'}
+2019-01-08 18:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Peru.html>
+{'company': 'Maquinarias y Equipos Industriales EIRL', 'address': '0002 Bellavista', 'country': 'Peru'}
+2019-01-08 18:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Peru.html>
+{'company': 'Motorkoz S.R.L.', 'address': 'San Juan de Miraflores, Lima', 'country': 'Peru'}
+2019-01-08 18:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Peru.html>
+{'company': 'Servein E.I.R.L.', 'address': '20306788001 Bellavista', 'country': 'Peru'}
+2019-01-08 18:29:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Paraguay.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:29:52 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:29:52 [scrapy.proxies] DEBUG: Using proxy <http://103.9.89.186:40422>, 221 proxies left
+2019-01-08 18:29:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Paraguay.html>
+{'company': 'Autoelevadores J. Ramires S.A.', 'address': '11800 Montevideo', 'country': 'Paraguay'}
+2019-01-08 18:29:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Paraguay.html>
+{'company': 'EQUIPOS Y SUMINISTROS SA    ', 'address': 'ASUNCION', 'country': 'Paraguay'}
+2019-01-08 18:30:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Panama.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:30:00 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:30:00 [scrapy.proxies] DEBUG: Using proxy <http://118.174.220.27:58624>, 221 proxies left
+2019-01-08 18:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Panama.html>
+{'company': 'Gudico S.A. (División Industrial- Vía Brasil/Zentrale)', 'address': 'Panamá', 'country': 'Panama'}
+2019-01-08 18:30:00 [scrapy.extensions.logstats] INFO: Crawled 40 pages (at 8 pages/min), scraped 183 items (at 21 items/min)
+2019-01-08 18:30:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Oman.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:30:08 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:30:08 [scrapy.proxies] DEBUG: Using proxy <http://206.189.145.96:8080>, 221 proxies left
+2019-01-08 18:30:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Oman.html>
+{'company': 'MUSCAT OVERSEAS INDUSTRIAL & MARINE EQUIPMENT TRADING CO. LLC', 'address': 'Azaiba, Muttrah', 'country': 'Oman'}
+2019-01-08 18:30:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Norway.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:30:14 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:30:14 [scrapy.proxies] DEBUG: Using proxy <http://118.175.93.71:54168>, 221 proxies left
+2019-01-08 18:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Norway.html>
+{'company': 'AL Maskin AS', 'address': '1011 Oslo', 'country': 'Norway'}
+2019-01-08 18:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Norway.html>
+{'company': 'ANDERSEN TRUCK A/S', 'address': '7080 Heimdal', 'country': 'Norway'}
+2019-01-08 18:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Norway.html>
+{'company': 'Atlet Norge AS', 'address': '2021 Skedsmokorset', 'country': 'Norway'}
+2019-01-08 18:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Norway.html>
+{'company': 'Berner Oy - Raisio', 'address': '7075 Trondheim', 'country': 'Norway'}
+2019-01-08 18:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Norway.html>
+{'company': 'Bil- og Truckservice', 'address': '0667 Oslo', 'country': 'Norway'}
+2019-01-08 18:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Norway.html>
+{'company': 'Brubakken Truckimport A/S', 'address': '21200 Raisio', 'country': 'Norway'}
+2019-01-08 18:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Norway.html>
+{'company': 'Brubakkens Truckservice AS', 'address': '9024 Tomasjord', 'country': 'Norway'}
+2019-01-08 18:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Norway.html>
+{'company': 'Daewoo Truck Norge AS', 'address': '3057 Solbergelva', 'country': 'Norway'}
+2019-01-08 18:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Nigeria.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:30:25 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:30:25 [scrapy.proxies] DEBUG: Using proxy <http://103.224.101.155:31538>, 221 proxies left
+2019-01-08 18:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Nigeria.html>
+{'company': 'Bah Engineering Consultant', 'address': 'Surulere', 'country': 'Nigeria'}
+2019-01-08 18:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Nigeria.html>
+{'company': 'Bah Engineering Consultants', 'address': 'Lagos', 'country': 'Nigeria'}
+2019-01-08 18:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Nigeria.html>
+{'company': 'Dodomeh Nig. Ltd', 'address': '234 1 Abule', 'country': 'Nigeria'}
+2019-01-08 18:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Niger.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:30:32 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:30:32 [scrapy.proxies] DEBUG: Using proxy <http://45.6.18.232:54402>, 221 proxies left
+2019-01-08 18:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Niger.html>
+{'company': 'Manutention Africaine Niger', 'address': 'Niamey', 'country': 'Niger'}
+2019-01-08 18:30:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/New-Zealand.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:30:44 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:30:44 [scrapy.proxies] DEBUG: Using proxy <http://1.20.97.54:60122>, 221 proxies left
+2019-01-08 18:30:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/New-Zealand.html>
+{'company': 'Eurolift NZ LTD', 'address': 'Auckland', 'country': 'New-Zealand'}
+2019-01-08 18:30:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/New-Zealand.html>
+{'company': 'Industrial Truck Sales Ltd', 'address': 'Pakaranga', 'country': 'New-Zealand'}
+2019-01-08 18:30:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Netherlands.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:30:55 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:30:55 [scrapy.proxies] DEBUG: Using proxy <http://182.52.74.76:34084>, 221 proxies left
+2019-01-08 18:31:00 [scrapy.extensions.logstats] INFO: Crawled 46 pages (at 6 pages/min), scraped 198 items (at 15 items/min)
+2019-01-08 18:31:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:31:03 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:31:03 [scrapy.proxies] DEBUG: Using proxy <http://37.233.9.131:8080>, 221 proxies left
+2019-01-08 18:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html>
+{'company': 'Ab Location s.a.r.l.', 'address': 'Casablanca', 'country': 'Morocco'}
+2019-01-08 18:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html>
+{'company': 'Adil Manutention', 'address': 'CASABLANCA', 'country': 'Morocco'}
+2019-01-08 18:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html>
+{'company': 'Afric Pesage', 'address': '20100 Casablanca', 'country': 'Morocco'}
+2019-01-08 18:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html>
+{'company': 'AL3A', 'address': '20500 Casablanca', 'country': 'Morocco'}
+2019-01-08 18:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html>
+{'company': 'AMTI', 'address': 'Casablanca', 'country': 'Morocco'}
+2019-01-08 18:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html>
+{'company': 'ASTH Manutention', 'address': '90000 Tanger', 'country': 'Morocco'}
+2019-01-08 18:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html>
+{'company': 'Auto-Hall', 'address': '20550 Casablanca', 'country': 'Morocco'}
+2019-01-08 18:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html>
+{'company': 'Bloc tube', 'address': '20300 Casablanca', 'country': 'Morocco'}
+2019-01-08 18:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Morocco.html>
+{'company': 'Cargotec Maghreb SA', 'address': '20300 Casablanca', 'country': 'Morocco'}
+2019-01-08 18:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Moldavia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:31:11 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:31:11 [scrapy.proxies] DEBUG: Using proxy <http://118.172.51.67:36818>, 221 proxies left
+2019-01-08 18:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Moldavia.html>
+{'company': 'STIVUITOR SRL ', 'address': '2023 Chisinau', 'country': 'Moldavia'}
+2019-01-08 18:31:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Mexico.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:31:22 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:31:22 [scrapy.proxies] DEBUG: Using proxy <http://1.20.97.47:43111>, 221 proxies left
+2019-01-08 18:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Mexico.html>
+{'company': 'AMECO - Central', 'address': '54040 Mexico City', 'country': 'Mexico'}
+2019-01-08 18:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Mexico.html>
+{'company': 'Bravo Seminuevos ', 'address': 'Apodaca, Nuevo León', 'country': 'Mexico'}
+2019-01-08 18:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Mexico.html>
+{'company': 'Ingenieria De Mantenimiento Integral Rosch SA DE CV', 'address': '27000 Torreon', 'country': 'Mexico'}
+2019-01-08 18:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Mexico.html>
+{'company': 'Kalmar Mexico Equipos S.A. de C.V.', 'address': '11000 Col. Lomas de Chapultepec', 'country': 'Mexico'}
+2019-01-08 18:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Mexico.html>
+{'company': 'Leotrak Montacargas', 'address': 'Monterrey, Nuevo León', 'country': 'Mexico'}
+2019-01-08 18:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Mexico.html>
+{'company': 'Montacargas Tapatíos', 'address': 'Guadalajara, Jalisco', 'country': 'Mexico'}
+2019-01-08 18:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Mexico.html>
+{'company': 'Montacargas y Servicios - COEMSA S.A.', 'address': '64550 Monterrey, Nuevo León', 'country': 'Mexico'}
+2019-01-08 18:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Mexico.html>
+{'company': 'Representaciones Dinámicas de Occidente, S.A. de C.V. (Grupo Redosa)', 'address': '45590 Tlaquepaque, Jalisco', 'country': 'Mexico'}
+2019-01-08 18:31:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Mauritius.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:31:33 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:31:33 [scrapy.proxies] DEBUG: Using proxy <http://110.5.110.98:33979>, 221 proxies left
+2019-01-08 18:31:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Mauritius.html>
+{'company': 'Mechanization Co. Ltd', 'address': '11210 Port Louis', 'country': 'Mauritius'}
+2019-01-08 18:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Malta.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:31:43 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:31:43 [scrapy.proxies] DEBUG: Using proxy <http://37.1.63.112:53281>, 221 proxies left
+2019-01-08 18:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Malta.html>
+{'company': 'Burmarrad Commercials Ltd', 'address': 'SPB 08 Burmarrad', 'country': 'Malta'}
+2019-01-08 18:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Malta.html>
+{'company': 'NAMD. Ltd.', 'address': 'Marsa', 'country': 'Malta'}
+2019-01-08 18:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Malta.html>
+{'company': 'RCV Handling Machinery Ltd', 'address': 'QRM 1940 Qormi', 'country': 'Malta'}
+2019-01-08 18:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Malta.html>
+{'company': 'UNEC Ltd.', 'address': 'SPB 08 Burmarrad', 'country': 'Malta'}
+2019-01-08 18:31:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Maledives.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:31:51 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:31:51 [scrapy.proxies] DEBUG: Using proxy <http://103.72.219.83:47352>, 221 proxies left
+2019-01-08 18:31:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Maledives.html>
+{'company': 'Tractor & Equipment Ltd. (MAURITIUS)', 'address': 'Pailles', 'country': 'Maledives'}
+2019-01-08 18:32:00 [scrapy.extensions.logstats] INFO: Crawled 52 pages (at 6 pages/min), scraped 222 items (at 24 items/min)
+2019-01-08 18:32:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Malaysia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:32:02 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:32:02 [scrapy.proxies] DEBUG: Using proxy <http://196.200.21.194:48503>, 221 proxies left
+2019-01-08 18:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Malaysia.html>
+{'company': 'Egan Equipment & Parts', 'address': '40150 Shah Alam, Selangor', 'country': 'Malaysia'}
+2019-01-08 18:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Malaysia.html>
+{'company': 'Mach 1 Group', 'address': '55200 Kuala Lumput', 'country': 'Malaysia'}
+2019-01-08 18:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Malaysia.html>
+{'company': 'TN Machinery & Equipment Sdn. Bhd.', 'address': '81100 Johor Bahru', 'country': 'Malaysia'}
+2019-01-08 18:32:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Madagascar.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:32:08 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:32:08 [scrapy.proxies] DEBUG: Using proxy <http://202.73.26.9:54471>, 221 proxies left
+2019-01-08 18:32:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Madagascar.html>
+{'company': 'Triumph', 'address': '12.218-101 Antananarivo', 'country': 'Madagascar'}
+2019-01-08 18:32:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:32:20 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:32:20 [scrapy.proxies] DEBUG: Using proxy <http://118.174.220.154:55124>, 221 proxies left
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'ADL - Ateliers Dostert Lorentzweiler', 'address': '7372 Lorentzweiler', 'country': 'Luxembourg'}
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'Agricom Landmaschinencenter Angelsberg', 'address': '7410 Angelsberg', 'country': 'Luxembourg'}
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'Ameco Sàrl', 'address': '7759 Roost (Rouscht)', 'country': 'Luxembourg'}
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'AP Genie Civil', 'address': 'Reckenge sur Mess', 'country': 'Luxembourg'}
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'armauric-lux-sa', 'address': 'L-4069 ESCH-SUR-ALZETTE', 'country': 'Luxembourg'}
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'Bergerat Monnoyeur S.A.', 'address': '3961 Ehlange', 'country': 'Luxembourg'}
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'Chariot Lux Manutention S.à r.l.', 'address': '2146 Luxembourg', 'country': 'Luxembourg'}
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'Ets Guy Haeck & Fils', 'address': '4751 Petange', 'country': 'Luxembourg'}
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'Europièces Luxembourg S.A.', 'address': '3961 Ehlange', 'country': 'Luxembourg'}
+2019-01-08 18:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Luxembourg.html>
+{'company': 'Euro-services SA', 'address': '4384 Ehlerange', 'country': 'Luxembourg'}
+2019-01-08 18:32:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Lithuania.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:32:29 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:32:29 [scrapy.proxies] DEBUG: Using proxy <http://187.185.71.222:52801>, 221 proxies left
+2019-01-08 18:32:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Lithuania.html>
+{'company': ' II "ARVERIVA"  ', 'address': '02244 Vilnius', 'country': 'Lithuania'}
+2019-01-08 18:32:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Lithuania.html>
+{'company': 'ADEMAX, UAB', 'address': '02120 Vilnius', 'country': 'Lithuania'}
+2019-01-08 18:32:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Lithuania.html>
+{'company': 'APTARNA ', 'address': '76196 Siauliai', 'country': 'Lithuania'}
+2019-01-08 18:32:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Lithuania.html>
+{'company': 'Bakra UAB', 'address': 'LT02190 Vilnius', 'country': 'Lithuania'}
+2019-01-08 18:32:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Lithuania.html>
+{'company': 'Balastas', 'address': '2028 Vilnius', 'country': 'Lithuania'}
+2019-01-08 18:32:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Lithuania.html>
+{'company': 'Baltexim, UAB', 'address': 'LT-46241 Kaunas', 'country': 'Lithuania'}
+2019-01-08 18:32:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Lithuania.html>
+{'company': 'Balti Tehnika UAB', 'address': 'LT-06325 Vilnius', 'country': 'Lithuania'}
+2019-01-08 18:32:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Lithuania.html>
+{'company': 'Baltic Machinery', 'address': 'LT-03202 Vilnius', 'country': 'Lithuania'}
+2019-01-08 18:32:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Liechtenstein.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:32:41 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:32:41 [scrapy.proxies] DEBUG: Using proxy <http://181.197.83.210:53367>, 221 proxies left
+2019-01-08 18:32:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Liechtenstein.html>
+{'company': 'Hugo Schaedler', 'address': '9495 Triesen', 'country': 'Liechtenstein'}
+2019-01-08 18:32:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Lesotho.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:32:51 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:32:51 [scrapy.proxies] DEBUG: Using proxy <http://41.77.211.194:8888>, 221 proxies left
+2019-01-08 18:32:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Lesotho.html>
+{'company': 'Bloemfontein Forklifts', 'address': 'Bloemfontein', 'country': 'Lesotho'}
+2019-01-08 18:33:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Lebanon.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:33:00 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:33:00 [scrapy.proxies] DEBUG: Using proxy <http://203.201.174.82:23500>, 221 proxies left
+2019-01-08 18:33:00 [scrapy.extensions.logstats] INFO: Crawled 59 pages (at 7 pages/min), scraped 246 items (at 24 items/min)
+2019-01-08 18:33:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Latvia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:33:12 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:33:12 [scrapy.proxies] DEBUG: Using proxy <http://212.98.158.245:48263>, 221 proxies left
+2019-01-08 18:33:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Latvia.html>
+{'company': 'Alfis SIA', 'address': 'LV-2167 Marupes novads', 'country': 'Latvia'}
+2019-01-08 18:33:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Latvia.html>
+{'company': 'BALKANCAR LATVIA SIA', 'address': 'LV1058 Riga', 'country': 'Latvia'}
+2019-01-08 18:33:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Latvia.html>
+{'company': 'Baltexim SIA', 'address': 'LV-1076 Riga', 'country': 'Latvia'}
+2019-01-08 18:33:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Latvia.html>
+{'company': 'Balti Tehnika SIA', 'address': 'LV-1024 Rigas rajonas', 'country': 'Latvia'}
+2019-01-08 18:33:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Latvia.html>
+{'company': 'Blic SIA', 'address': '1009 Riga', 'country': 'Latvia'}
+2019-01-08 18:33:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Latvia.html>
+{'company': 'Ekström SIA', 'address': '1039 Riga', 'country': 'Latvia'}
+2019-01-08 18:33:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Latvia.html>
+{'company': 'Griteps SIA', 'address': 'LV1073 Riga', 'country': 'Latvia'}
+2019-01-08 18:33:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Kuwait.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:33:24 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:33:24 [scrapy.proxies] DEBUG: Using proxy <http://103.74.70.81:33607>, 221 proxies left
+2019-01-08 18:33:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Kuwait.html>
+{'company': 'Clark General Trading Co.', 'address': '32030 Kuwait', 'country': 'Kuwait'}
+2019-01-08 18:33:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Kuwait.html>
+{'company': 'Multitech General Trading & Cont Co. W.L.L.', 'address': '13057 Mirqab', 'country': 'Kuwait'}
+2019-01-08 18:33:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Kenya.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:33:30 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:33:30 [scrapy.proxies] DEBUG: Using proxy <http://41.75.13.79:52120>, 221 proxies left
+2019-01-08 18:33:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Kenya.html>
+{'company': 'Blackwood Hodge (Kenya) Limited - Nairobi', 'address': '45158 Nairobi', 'country': 'Kenya'}
+2019-01-08 18:33:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Kazakhstan.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:33:39 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:33:39 [scrapy.proxies] DEBUG: Using proxy <http://177.130.55.154:36354>, 221 proxies left
+2019-01-08 18:33:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Kazakhstan.html>
+{'company': 'KaztechtransPlus Ltd.  ', 'address': '050054 Almaty', 'country': 'Kazakhstan'}
+2019-01-08 18:33:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Jordan.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:33:51 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:33:51 [scrapy.proxies] DEBUG: Using proxy <http://150.107.103.26:57157>, 221 proxies left
+2019-01-08 18:33:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Jordan.html>
+{'company': 'AL AFIFI TRADING COMPANY', 'address': '0096226 Amman', 'country': 'Jordan'}
+2019-01-08 18:33:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Jordan.html>
+{'company': 'Engineering source departments est.', 'address': '13112 Amman', 'country': 'Jordan'}
+2019-01-08 18:33:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Jordan.html>
+{'company': 'Jerusalem Technical Supplies Co.', 'address': '11196 Amman', 'country': 'Jordan'}
+2019-01-08 18:33:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Japan.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:33:59 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:33:59 [scrapy.proxies] DEBUG: Using proxy <http://170.239.158.97:36027>, 221 proxies left
+2019-01-08 18:33:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Japan.html>
+{'company': 'CGM CO LTD', 'address': '321-0404 Utsunomiya', 'country': 'Japan'}
+2019-01-08 18:33:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Japan.html>
+{'company': 'F. Uchiyama & Co. Ltd.', 'address': '231-0006 Yokohama', 'country': 'Japan'}
+2019-01-08 18:33:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Japan.html>
+{'company': 'Komatsu KF Global Co., Ltd', 'address': '210-0869 Kawasaki-ku, Kawasaki', 'country': 'Japan'}
+2019-01-08 18:33:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Japan.html>
+{'company': 'Yashima K.K.', 'address': '347-0042 Saitama', 'country': 'Japan'}
+2019-01-08 18:34:00 [scrapy.extensions.logstats] INFO: Crawled 65 pages (at 6 pages/min), scraped 264 items (at 18 items/min)
+2019-01-08 18:34:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Ivory-Coast.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:34:11 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:34:11 [scrapy.proxies] DEBUG: Using proxy <http://181.143.17.178:58550>, 221 proxies left
+2019-01-08 18:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ivory-Coast.html>
+{'company': 'Manutention Africaine Cote d´Ivoir', 'address': 'Abidjan', 'country': 'Ivory-Coast'}
+2019-01-08 18:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ivory-Coast.html>
+{'company': 'Matforce', 'address': '01 BO 1844 Abidjan 01', 'country': 'Ivory-Coast'}
+2019-01-08 18:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ivory-Coast.html>
+{'company': 'TECMA SA', 'address': 'Abidjan 15', 'country': 'Ivory-Coast'}
+2019-01-08 18:34:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Italy.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:34:20 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:34:20 [scrapy.proxies] DEBUG: Using proxy <http://1.10.185.133:46783>, 221 proxies left
+2019-01-08 18:34:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Israel.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:34:31 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:34:31 [scrapy.proxies] DEBUG: Using proxy <http://94.244.28.246:31280>, 221 proxies left
+2019-01-08 18:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Israel.html>
+{'company': 'David Czapnik & Sons', 'address': '75633 Le Zion', 'country': 'Israel'}
+2019-01-08 18:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Israel.html>
+{'company': 'D.M.S.I.L. Machine Tools Ltd', 'address': '77110 Ashdod', 'country': 'Israel'}
+2019-01-08 18:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Israel.html>
+{'company': 'Equipment LTD (Tziyud B.M.)', 'address': '26111 Haifa Bay ', 'country': 'Israel'}
+2019-01-08 18:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Israel.html>
+{'company': 'Hor-Tal Marketing, Production and Services Ltd', 'address': 'Petach Tikwa', 'country': 'Israel'}
+2019-01-08 18:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Israel.html>
+{'company': 'Itzik forklifts LTD', 'address': '90805 Mevaseret Zion', 'country': 'Israel'}
+2019-01-08 18:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Israel.html>
+{'company': 'Kidmah Handling Equipment (1971) Ltd.', 'address': '75201 "New Industrial Zone P.O.Box 4041" Rishon LeZion', 'country': 'Israel'}
+2019-01-08 18:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Israel.html>
+{'company': 'P. Haim - Malgezot LTD', 'address': '58153 Holon', 'country': 'Israel'}
+2019-01-08 18:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Israel.html>
+{'company': 'Techno-Gat', 'address': '70350 Beer-Yacov', 'country': 'Israel'}
+2019-01-08 18:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Israel.html>
+{'company': 'Union Motors Ltd.', 'address': '61093 Tel Aviv', 'country': 'Israel'}
+2019-01-08 18:34:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:34:39 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:34:39 [scrapy.proxies] DEBUG: Using proxy <http://37.233.9.131:8080>, 221 proxies left
+2019-01-08 18:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html>
+{'company': 'A W E Forklift Service Ltd.', 'address': 'Maynooth', 'country': 'Ireland'}
+2019-01-08 18:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html>
+{'company': 'Able Lift Ltd.', 'address': 'Rathcoole Dublin', 'country': 'Ireland'}
+2019-01-08 18:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html>
+{'company': 'Aisle Master Ltd', 'address': 'Kildare', 'country': 'Ireland'}
+2019-01-08 18:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html>
+{'company': 'Albany Forklift Hire', 'address': 'Monaghan', 'country': 'Ireland'}
+2019-01-08 18:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html>
+{'company': 'Amlac Limited', 'address': 'Dublin 11 Dublin', 'country': 'Ireland'}
+2019-01-08 18:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html>
+{'company': 'Atlas Forklifts Ltd.', 'address': 'Dublin 17', 'country': 'Ireland'}
+2019-01-08 18:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html>
+{'company': 'Atlas Mechanical Services', 'address': 'K32R656 Balbriggan', 'country': 'Ireland'}
+2019-01-08 18:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html>
+{'company': 'Bercon Ltd.', 'address': '01 Balbriggan', 'country': 'Ireland'}
+2019-01-08 18:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ireland.html>
+{'company': 'B.K. Forklifts', 'address': 'Kilsallaghan', 'country': 'Ireland'}
+2019-01-08 18:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Iran.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:34:46 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:34:46 [scrapy.proxies] DEBUG: Using proxy <http://213.142.206.146:53281>, 221 proxies left
+2019-01-08 18:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iran.html>
+{'company': 'Asghar Bakhshandeh', 'address': 'Qazvin', 'country': 'Iran'}
+2019-01-08 18:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iran.html>
+{'company': 'Iran Khodro Diesel', 'address': 'Theran', 'country': 'Iran'}
+2019-01-08 18:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iran.html>
+{'company': 'Kimia Machine Asia', 'address': 'Tehran', 'country': 'Iran'}
+2019-01-08 18:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iran.html>
+{'company': 'Mammut Industrial Group - Iran', 'address': 'Tehran', 'country': 'Iran'}
+2019-01-08 18:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iran.html>
+{'company': 'Pars Egzoz Co.', 'address': 'Tehran', 'country': 'Iran'}
+2019-01-08 18:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iran.html>
+{'company': 'Tehran Fa-al Co. Ltd. ', 'address': '1199836111 Tehran', 'country': 'Iran'}
+2019-01-08 18:34:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Indonesia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:34:55 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:34:55 [scrapy.proxies] DEBUG: Using proxy <http://182.52.51.251:54015>, 221 proxies left
+2019-01-08 18:34:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Indonesia.html>
+{'company': 'PT Eurotrucks Mekanika Prima', 'address': '14330 Jakarta Utara', 'country': 'Indonesia'}
+2019-01-08 18:35:00 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 6 pages/min), scraped 292 items (at 28 items/min)
+2019-01-08 18:35:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/India.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:35:07 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:35:07 [scrapy.proxies] DEBUG: Using proxy <http://103.239.77.184:53634>, 221 proxies left
+2019-01-08 18:35:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/India.html>
+{'company': 'Coral Exports', 'address': '400003 Mumbai', 'country': 'India'}
+2019-01-08 18:35:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/India.html>
+{'company': 'Foretek (Madras)', 'address': '600 017 Chennai', 'country': 'India'}
+2019-01-08 18:35:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/India.html>
+{'company': 'GEAR - Gemini Equipment And Rentals Pvt. Ltd.', 'address': '400705 Vashi Navi Mumbai', 'country': 'India'}
+2019-01-08 18:35:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/India.html>
+{'company': 'Geomatt Equipment Rentals Pvt Ltd', 'address': '400009 Masjid East Mumbai', 'country': 'India'}
+2019-01-08 18:35:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/India.html>
+{'company': 'Godrej & Boyce Mfg. Co. Ltd.', 'address': '400079 Vikhroli - Mumbai', 'country': 'India'}
+2019-01-08 18:35:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/India.html>
+{'company': 'OM Sales and  Services', 'address': '400 081 Mumbai ', 'country': 'India'}
+2019-01-08 18:35:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/India.html>
+{'company': 'SFS - Sai Forklift Services', 'address': '560 033 Bangalore', 'country': 'India'}
+2019-01-08 18:35:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/India.html>
+{'company': 'Southern Forklifters', 'address': '560 002 Banglore', 'country': 'India'}
+2019-01-08 18:35:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/India.html>
+{'company': 'UMS - Unitech Marketing Service', 'address': '400 020 Mumbai', 'country': 'India'}
+2019-01-08 18:35:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Iceland.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:35:16 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:35:16 [scrapy.proxies] DEBUG: Using proxy <http://1.20.97.54:60122>, 221 proxies left
+2019-01-08 18:35:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iceland.html>
+{'company': 'Fjárfag ehf', 'address': '300 Arkanes', 'country': 'Iceland'}
+2019-01-08 18:35:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iceland.html>
+{'company': 'GLOBUS Vélaver H/F', 'address': '8535 Reykjavik', 'country': 'Iceland'}
+2019-01-08 18:35:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iceland.html>
+{'company': 'Islyft ehf.', 'address': '200 Kópavogur', 'country': 'Iceland'}
+2019-01-08 18:35:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Iceland.html>
+{'company': 'Prolift ehf', 'address': '200 Kópavogi', 'country': 'Iceland'}
+2019-01-08 18:35:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Hungary.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:35:25 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:35:25 [scrapy.proxies] DEBUG: Using proxy <http://89.111.211.36:38596>, 221 proxies left
+2019-01-08 18:35:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Hungary.html>
+{'company': 'Alfa-Wintrade Kft.', 'address': '2220 Vecsés ', 'country': 'Hungary'}
+2019-01-08 18:35:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Hungary.html>
+{'company': 'Amg-szervisz Kft', 'address': '2051 Biatorbágy', 'country': 'Hungary'}
+2019-01-08 18:35:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Hungary.html>
+{'company': 'Autotarg 2005 Kft.', 'address': '2330 Dunaharaszti', 'country': 'Hungary'}
+2019-01-08 18:35:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Hong-Kong.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:35:32 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:35:32 [scrapy.proxies] DEBUG: Using proxy <http://119.82.253.175:31500>, 221 proxies left
+2019-01-08 18:35:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Hong-Kong.html>
+{'company': 'Brigantine Services Limited', 'address': 'Hong Kong', 'country': 'Hong-Kong'}
+2019-01-08 18:35:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Hong-Kong.html>
+{'company': 'Linde Material Handling Hong Kong Ltd', 'address': 'Kwai Chung N.T. ', 'country': 'Hong-Kong'}
+2019-01-08 18:35:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Hong-Kong.html>
+{'company': 'The East Atlantic Co.', 'address': '26-38 Ska tsui Rd.', 'country': 'Hong-Kong'}
+2019-01-08 18:35:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Haiti.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:35:43 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:35:43 [scrapy.proxies] DEBUG: Using proxy <http://101.51.141.119:56704>, 221 proxies left
+2019-01-08 18:35:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Haiti.html>
+{'company': 'Haytrac - Haytian Tractor', 'address': 'Port-au-Prince', 'country': 'Haiti'}
+2019-01-08 18:35:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Guyana.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:35:55 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:35:55 [scrapy.proxies] DEBUG: Using proxy <http://94.244.28.246:31280>, 221 proxies left
+2019-01-08 18:35:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Guyana.html>
+{'company': 'Materiels et services ', 'address': '97300 CAYENNE ', 'country': 'Guyana'}
+2019-01-08 18:36:00 [scrapy.extensions.logstats] INFO: Crawled 77 pages (at 6 pages/min), scraped 313 items (at 21 items/min)
+2019-01-08 18:36:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Guatemala.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:36:07 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:36:07 [scrapy.proxies] DEBUG: Using proxy <http://176.110.154.119:48337>, 221 proxies left
+2019-01-08 18:36:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Greece.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:36:15 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:36:15 [scrapy.proxies] DEBUG: Using proxy <http://1.20.103.208:53246>, 221 proxies left
+2019-01-08 18:36:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Greece.html>
+{'company': 'Achaia Stihl    ', 'address': '19600 MANDRA', 'country': 'Greece'}
+2019-01-08 18:36:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Greece.html>
+{'company': 'Alexander Dimitriou & Sons Ltd', 'address': '13678 Acharnes', 'country': 'Greece'}
+2019-01-08 18:36:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Greece.html>
+{'company': 'Alexopoulos F. Agathoklis', 'address': '26221 Patra', 'country': 'Greece'}
+2019-01-08 18:36:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Greece.html>
+{'company': 'Amentas Antonis', 'address': 'CY - 2260 Latsida-Nicosia', 'country': 'Greece'}
+2019-01-08 18:36:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Greece.html>
+{'company': 'Anateko S.A.', 'address': '41336 Larisa', 'country': 'Greece'}
+2019-01-08 18:36:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Greece.html>
+{'company': 'ANIMI G. Titopoulos Ltd', 'address': '20007 Korinthos', 'country': 'Greece'}
+2019-01-08 18:36:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Greece.html>
+{'company': 'Arsis Ltd', 'address': '14410 Metamorphossi', 'country': 'Greece'}
+2019-01-08 18:36:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Greece.html>
+{'company': 'Bioman Lifting & Transporting Machines Ltd.', 'address': '136 71 Aharnai ', 'country': 'Greece'}
+2019-01-08 18:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Ghana.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:36:23 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:36:23 [scrapy.proxies] DEBUG: Using proxy <http://89.208.20.250:34350>, 221 proxies left
+2019-01-08 18:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ghana.html>
+{'company': 'Harlequin', 'address': 'Tema', 'country': 'Ghana'}
+2019-01-08 18:36:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Germany.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:36:34 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:36:34 [scrapy.proxies] DEBUG: Using proxy <http://182.52.51.251:54015>, 221 proxies left
+2019-01-08 18:36:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Georgia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:36:41 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:36:41 [scrapy.proxies] DEBUG: Using proxy <http://103.239.77.184:53634>, 221 proxies left
+2019-01-08 18:36:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Georgia.html>
+{'company': 'TMH Caucasus Ltd', 'address': '3700 Rustavi', 'country': 'Georgia'}
+2019-01-08 18:36:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Georgia.html>
+{'company': 'Universal Intralogistics', 'address': '0186 Tbilisi', 'country': 'Georgia'}
+2019-01-08 18:36:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Gabon.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:36:51 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:36:51 [scrapy.proxies] DEBUG: Using proxy <http://62.176.1.194:40020>, 221 proxies left
+2019-01-08 18:36:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Gabon.html>
+{'company': 'Diesel Gabon', 'address': 'BP205 Libreville', 'country': 'Gabon'}
+2019-01-08 18:37:00 [scrapy.extensions.logstats] INFO: Crawled 83 pages (at 6 pages/min), scraped 325 items (at 12 items/min)
+2019-01-08 18:37:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/France.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:37:04 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:37:04 [scrapy.proxies] DEBUG: Using proxy <http://1.20.101.12:36542>, 221 proxies left
+2019-01-08 18:37:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Finland.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:37:13 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:37:13 [scrapy.proxies] DEBUG: Using proxy <http://38.99.116.136:32795>, 221 proxies left
+2019-01-08 18:37:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Finland.html>
+{'company': 'ABB Oy service', 'address': '04220 Kerava', 'country': 'Finland'}
+2019-01-08 18:37:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Finland.html>
+{'company': 'AP-Trukit', 'address': '01730 Vantaa', 'country': 'Finland'}
+2019-01-08 18:37:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Finland.html>
+{'company': 'Auramo Trukit Oy', 'address': '15101 Lahti', 'country': 'Finland'}
+2019-01-08 18:37:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Finland.html>
+{'company': 'Berner Osakeyhtiö', 'address': '70150 KUOPIO', 'country': 'Finland'}
+2019-01-08 18:37:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Finland.html>
+{'company': 'Berner Oy - Tampere', 'address': '01511 Vantaa', 'country': 'Finland'}
+2019-01-08 18:37:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Finland.html>
+{'company': 'Cargotec Finland Oy', 'address': '00131 Helsinki', 'country': 'Finland'}
+2019-01-08 18:37:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Finland.html>
+{'company': 'Clark Lift Finnland', 'address': '33841 Tampere', 'country': 'Finland'}
+2019-01-08 18:37:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Finland.html>
+{'company': 'Ekström-yhtiöt', 'address': '33710 Tampere', 'country': 'Finland'}
+2019-01-08 18:37:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:37:25 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:37:25 [scrapy.proxies] DEBUG: Using proxy <http://94.244.28.246:31280>, 221 proxies left
+2019-01-08 18:37:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html>
+{'company': 'ABC Tõstuk OÜ', 'address': '75312 Harjumaa', 'country': 'Estonia'}
+2019-01-08 18:37:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html>
+{'company': 'ADVISTER OÜ', 'address': '13517 Tallinn', 'country': 'Estonia'}
+2019-01-08 18:37:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html>
+{'company': 'AIGREN OÜ', 'address': '11415 Tallinn', 'country': 'Estonia'}
+2019-01-08 18:37:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html>
+{'company': 'Almering Trading Ltd.', 'address': '65607 Võru', 'country': 'Estonia'}
+2019-01-08 18:37:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html>
+{'company': 'AS Baltem', 'address': '74117 Maardu', 'country': 'Estonia'}
+2019-01-08 18:37:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html>
+{'company': 'AS Motroonik', 'address': '11415 Tallinn', 'country': 'Estonia'}
+2019-01-08 18:37:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html>
+{'company': 'Awwa OÜ', 'address': '11216 Tallinn', 'country': 'Estonia'}
+2019-01-08 18:37:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html>
+{'company': 'Back-up Malthus OÜ', 'address': '50603 Tartu', 'country': 'Estonia'}
+2019-01-08 18:37:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Estonia.html>
+{'company': 'BALKANCAR IMPEX OÜ', 'address': '11711 Tallinn', 'country': 'Estonia'}
+2019-01-08 18:37:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/El-Salvador.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:37:34 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:37:34 [scrapy.proxies] DEBUG: Using proxy <http://1.10.186.30:43489>, 221 proxies left
+2019-01-08 18:37:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/El-Salvador.html>
+{'company': 'Didea Industrial S.A. de C.V', 'address': 'San Salvador', 'country': 'El-Salvador'}
+2019-01-08 18:37:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:37:46 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:37:46 [scrapy.proxies] DEBUG: Using proxy <http://185.12.25.90:8080>, 221 proxies left
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'Abu El-Dahab Trade & Import', 'address': 'Shubra,Cairo', 'country': 'Egypt'}
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'Ahmed Daoud & Co.', 'address': 'Cairo', 'country': 'Egypt'}
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'Al Captain Company ', 'address': '21624 Alexandria', 'country': 'Egypt'}
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'Amreya Engineering & Industrial Products-Salah Seoudi', 'address': 'El-Arab,Alexandria, Alexandrie', 'country': 'Egypt'}
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'Combi Egypt', 'address': 'Heliopolis,Cairo, Kairo', 'country': 'Egypt'}
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'ECTRA - Egyptian Consulting and Trading Co. Ltd.', 'address': 'Zamalek, Cairo', 'country': 'Egypt'}
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'Egybrit - Egyptian British Company', 'address': 'Cairo', 'country': 'Egypt'}
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'MANTRAC', 'address': 'Alexandria', 'country': 'Egypt'}
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'Mawared for Trading and Engineering', 'address': '74101 Cairo', 'country': 'Egypt'}
+2019-01-08 18:37:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Egypt.html>
+{'company': 'Mechanical Tools Co.', 'address': 'Cairo', 'country': 'Egypt'}
+2019-01-08 18:37:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Ecuador.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:37:52 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:37:52 [scrapy.proxies] DEBUG: Using proxy <http://103.239.77.184:53634>, 221 proxies left
+2019-01-08 18:37:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Ecuador.html>
+{'company': 'Eica Emilio Isaias C.A. de Comercio', 'address': 'P.O. Box 09-01-991 Guayaquil', 'country': 'Ecuador'}
+2019-01-08 18:38:00 [scrapy.extensions.logstats] INFO: Crawled 89 pages (at 6 pages/min), scraped 354 items (at 29 items/min)
+2019-01-08 18:38:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Dominican-Republic.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:38:04 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:38:04 [scrapy.proxies] DEBUG: Using proxy <http://128.74.175.248:57998>, 221 proxies left
+2019-01-08 18:38:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Dominican-Republic.html>
+{'company': 'COC Dominicana, S.A.', 'address': 'Santo Domingo', 'country': 'Dominican-Republic'}
+2019-01-08 18:38:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Dominican-Republic.html>
+{'company': 'IMCA - Implementos y Maquinarias C. Por A.', 'address': 'Santo Domingo', 'country': 'Dominican-Republic'}
+2019-01-08 18:38:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Denmark.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:38:15 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:38:15 [scrapy.proxies] DEBUG: Using proxy <http://103.212.128.29:31220>, 221 proxies left
+2019-01-08 18:38:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Denmark.html>
+{'company': 'Akos A/S', 'address': '2630 Tåstrup', 'country': 'Denmark'}
+2019-01-08 18:38:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Denmark.html>
+{'company': 'Alterna Truck ApS', 'address': '6000 Kolding', 'country': 'Denmark'}
+2019-01-08 18:38:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Denmark.html>
+{'company': 'A/S N.P. Trucks', 'address': '8300 Odder', 'country': 'Denmark'}
+2019-01-08 18:38:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Denmark.html>
+{'company': 'A.Sømod A/S', 'address': '7323 Give', 'country': 'Denmark'}
+2019-01-08 18:38:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Denmark.html>
+{'company': 'Atlet Denmark A/S', 'address': '8472 Sporup', 'country': 'Denmark'}
+2019-01-08 18:38:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Denmark.html>
+{'company': 'Barnekov Truck & Maskinservice', 'address': '8700 Horsens', 'country': 'Denmark'}
+2019-01-08 18:38:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Denmark.html>
+{'company': 'Bechmann Trucks A/S', 'address': '2860 Søborg', 'country': 'Denmark'}
+2019-01-08 18:38:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Czech-Republic.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:38:25 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:38:25 [scrapy.proxies] DEBUG: Using proxy <http://202.29.243.98:59534>, 221 proxies left
+2019-01-08 18:38:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Czech-Republic.html>
+{'company': 'AGROM - KJ s.r.o.', 'address': '561 61 Červená Voda 298', 'country': 'Czech-Republic'}
+2019-01-08 18:38:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Czech-Republic.html>
+{'company': 'AGROSERVIS OPAVA - AGROSERVIS HLUCÍN', 'address': '251 01 Rícany u Prahy', 'country': 'Czech-Republic'}
+2019-01-08 18:38:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Czech-Republic.html>
+{'company': 'ALTO SYSTEMS s.r.o.', 'address': '108 00 PRAHA 10', 'country': 'Czech-Republic'}
+2019-01-08 18:38:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Czech-Republic.html>
+{'company': 'ANTONIN SPACEK PALETOSERVIS', 'address': '719 03 Ostrava - Hrabová', 'country': 'Czech-Republic'}
+2019-01-08 18:38:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Cyprus.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:38:35 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:38:35 [scrapy.proxies] DEBUG: Using proxy <http://181.15.172.205:54567>, 221 proxies left
+2019-01-08 18:38:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Cyprus.html>
+{'company': 'Makian Ltd.', 'address': '7100 Aradippou, Larnaka', 'country': 'Cyprus'}
+2019-01-08 18:38:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Cyprus.html>
+{'company': 'Uniplant Ltd', 'address': '2250 Latsia', 'country': 'Cyprus'}
+2019-01-08 18:38:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:38:43 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:38:43 [scrapy.proxies] DEBUG: Using proxy <http://36.66.124.227:46661>, 221 proxies left
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'AUDAX doo', 'address': '21212 Kastel-Sucurac', 'country': 'Croatia'}
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'AUTO LONCARIC D.O.O.', 'address': '10000  Zagreb', 'country': 'Croatia'}
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'Autokuca Gasparic', 'address': '40000 Čakovec ', 'country': 'Croatia'}
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'BONUS D.O.O', 'address': '32100 Vinkovci', 'country': 'Croatia'}
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'CONTEK doo - Osijek', 'address': '31000 Osijek', 'country': 'Croatia'}
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'CONTEK doo - Zagreb', 'address': '10000 Zagreb', 'country': 'Croatia'}
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'DAR d.o.o.', 'address': '35 000 Slavonski Brod', 'country': 'Croatia'}
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'D&D SERVIS', 'address': '10434 Strmec Samoborski', 'country': 'Croatia'}
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'EURODELTA d.o.o.', 'address': '51000 Rijeka', 'country': 'Croatia'}
+2019-01-08 18:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Croatia.html>
+{'company': 'EURODELTA d.o.o.', 'address': '51000 Rijeka', 'country': 'Croatia'}
+2019-01-08 18:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Costa-Rica.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:38:49 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:38:49 [scrapy.proxies] DEBUG: Using proxy <http://1.20.97.47:43111>, 221 proxies left
+2019-01-08 18:38:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Costa-Rica.html>
+{'company': 'Partselect', 'address': '40303 San Miguel', 'country': 'Costa-Rica'}
+2019-01-08 18:38:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Congo.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:38:58 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:38:58 [scrapy.proxies] DEBUG: Using proxy <http://82.135.245.222:50739>, 221 proxies left
+2019-01-08 18:38:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Congo.html>
+{'company': 'Tractafric - SHO Congo', 'address': 'Pointe Noire', 'country': 'Congo'}
+2019-01-08 18:39:00 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 7 pages/min), scraped 381 items (at 27 items/min)
+2019-01-08 18:39:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Columbia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:39:08 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:39:08 [scrapy.proxies] DEBUG: Using proxy <http://185.12.25.90:8080>, 221 proxies left
+2019-01-08 18:39:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Columbia.html>
+{'company': 'Agencia Alemana - Material Handling', 'address': 'P.O. Box 94-836 Bogotá', 'country': 'Columbia'}
+2019-01-08 18:39:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Columbia.html>
+{'company': 'Electromontacargas Ltda.', 'address': 'Bogotá', 'country': 'Columbia'}
+2019-01-08 18:39:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Columbia.html>
+{'company': 'Gecolsa - General de Equipos de Colombia', 'address': 'Bogotá', 'country': 'Columbia'}
+2019-01-08 18:39:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Columbia.html>
+{'company': 'MHELS', 'address': 'Bogotá', 'country': 'Columbia'}
+2019-01-08 18:39:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Columbia.html>
+{'company': 'Montacargas ATM', 'address': 'Bogotá', 'country': 'Columbia'}
+2019-01-08 18:39:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Columbia.html>
+{'company': 'Montacargas y Equipos Su Servicio S.A. ', 'address': 'Cali, Valle', 'country': 'Columbia'}
+2019-01-08 18:39:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Columbia.html>
+{'company': 'MSLI', 'address': 'Bogotá', 'country': 'Columbia'}
+2019-01-08 18:39:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Columbia.html>
+{'company': 'Praco Didacol S.A.', 'address': 'Bogotá', 'country': 'Columbia'}
+2019-01-08 18:39:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/China.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:39:20 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:39:20 [scrapy.proxies] DEBUG: Using proxy <http://112.78.39.59:32410>, 221 proxies left
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'Linde-Xiamen forklift truck corporation Ltd. - Beijing Branch', 'address': '100016 Beijing', 'country': 'China'}
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'Linde-Xiamen forklift truck corporation Ltd. - Dalian Branch', 'address': '116600 Dalian City', 'country': 'China'}
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'Linde-Xiamen forklift truck corporation Ltd. - Guangzhou Branch', 'address': '511430 Dashi Town, Fangyu City', 'country': 'China'}
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'Linde-Xiamen forklift truck corporation Ltd. - Qingdao Branch', 'address': '266100 Qingdao', 'country': 'China'}
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'Linde-Xiamen forklift truck corporation Ltd. - Shanghai Branch', 'address': '201101 Shanghai ', 'country': 'China'}
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'Linde-Xiamen forklift truck corporation Ltd. - Shenzhen Branch', 'address': '518133 Baoan, Shenzhen', 'country': 'China'}
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'Linde-Xiamen forklift truck corporation Ltd. - Suzhou Branch', 'address': '215126 Suzhou', 'country': 'China'}
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'nalift', 'address': '231600 Hefei', 'country': 'China'}
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'RunnTech Electronics (Changzhou) Corp.', 'address': '213161 Wujin', 'country': 'China'}
+2019-01-08 18:39:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/China.html>
+{'company': 'Shanghai Shangli Heavy Industry Co.Ltd', 'address': '201801 Shanghai', 'country': 'China'}
+2019-01-08 18:39:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Chile.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:39:27 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:39:27 [scrapy.proxies] DEBUG: Using proxy <http://182.52.51.251:54015>, 221 proxies left
+2019-01-08 18:39:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Chile.html>
+{'company': 'Arrimaq - Planta Santiago (Central)', 'address': '8050000 San Bernardo, Santiago', 'country': 'Chile'}
+2019-01-08 18:39:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Chile.html>
+{'company': 'Dercomaq', 'address': 'Quilicura, Santiago', 'country': 'Chile'}
+2019-01-08 18:39:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Chile.html>
+{'company': 'Linde High Lift Chile S.A. - Branch Puerto Montt ', 'address': '1520 Puerto Montt', 'country': 'Chile'}
+2019-01-08 18:39:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Chile.html>
+{'company': 'Linde High Lift Chile S.A. - Branch Talcahuano', 'address': '8011 Talcahuano', 'country': 'Chile'}
+2019-01-08 18:39:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Chile.html>
+{'company': 'Maestranza Sylas Limitada', 'address': 'Rancagua', 'country': 'Chile'}
+2019-01-08 18:39:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Chile.html>
+{'company': 'Rovitec Ltda', 'address': 'Región Metropolitana', 'country': 'Chile'}
+2019-01-08 18:39:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Chile.html>
+{'company': 'Tattersall Maquinarias S.A.', 'address': '8590482 Santiago', 'country': 'Chile'}
+2019-01-08 18:39:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Chile.html>
+{'company': 'Yale Chile S.A. (Manimat S.A.)', 'address': 'Santiago', 'country': 'Chile'}
+2019-01-08 18:39:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Chad.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:39:35 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:39:35 [scrapy.proxies] DEBUG: Using proxy <http://62.176.1.194:40020>, 221 proxies left
+2019-01-08 18:39:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Chad.html>
+{'company': 'SHO TCHAD', 'address': 'BP 450 NDJAMENA', 'country': 'Chad'}
+2019-01-08 18:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Canada.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:39:44 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:39:44 [scrapy.proxies] DEBUG: Using proxy <http://103.87.168.6:49303>, 221 proxies left
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': ' Mister Mechanic', 'address': 'L5C 1V8 Mississauga', 'country': 'Canada'}
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': 'A1machinery', 'address': 'H4N 2M8 Saint-Laurent, QC ', 'country': 'Canada'}
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': 'Capital Industrial Sales & Service Ltd', 'address': 'T6P 1S9 Edmonton, AB', 'country': 'Canada'}
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': 'Chariots Elévateurs Du Québec Inc (Les)', 'address': 'QC G1M 2X5 Quebec', 'country': 'Canada'}
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': 'Chariots Gagnon', 'address': 'H1P1X3 Montreal Quebec', 'country': 'Canada'}
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': 'East Coast Truck Sales', 'address': 'B0 P 1P0 Nova Scotia', 'country': 'Canada'}
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': 'Entreprise Lemire & Frères ', 'address': 'Pierreville', 'country': 'Canada'}
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': 'Hansler Industries', 'address': 'K6V 3T5 Brockville, ON', 'country': 'Canada'}
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': 'Hansler Manutention Inc.', 'address': 'H9P 1A3 Dorval, QC', 'country': 'Canada'}
+2019-01-08 18:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Canada.html>
+{'company': 'Lift Expert', 'address': 'G6T 1S6 Victoriaville ', 'country': 'Canada'}
+2019-01-08 18:39:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Cameroon.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:39:56 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:39:56 [scrapy.proxies] DEBUG: Using proxy <http://103.109.14.237:60458>, 221 proxies left
+2019-01-08 18:40:00 [scrapy.extensions.logstats] INFO: Crawled 102 pages (at 6 pages/min), scraped 418 items (at 37 items/min)
+2019-01-08 18:40:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:40:07 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:40:07 [scrapy.proxies] DEBUG: Using proxy <http://105.27.154.210:60379>, 221 proxies left
+2019-01-08 18:40:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html>
+{'company': 'Abo 2012', 'address': '4007 Plovdiv', 'country': 'Bulgaria'}
+2019-01-08 18:40:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html>
+{'company': 'Akord Ltd.', 'address': '4027 Plovdiv', 'country': 'Bulgaria'}
+2019-01-08 18:40:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html>
+{'company': 'Apex Service', 'address': '4003 Plovdiv', 'country': 'Bulgaria'}
+2019-01-08 18:40:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html>
+{'company': 'B & G Ltd.', 'address': '4000 Plovdiv', 'country': 'Bulgaria'}
+2019-01-08 18:40:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html>
+{'company': 'Balkan Jsc. Lovech', 'address': '1612 Sofia', 'country': 'Bulgaria'}
+2019-01-08 18:40:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html>
+{'company': 'Balkancar - Record Inc.', 'address': '5500 Lovech', 'country': 'Bulgaria'}
+2019-01-08 18:40:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html>
+{'company': 'Balkancar BG Ltd', 'address': '5800 Pleven', 'country': 'Bulgaria'}
+2019-01-08 18:40:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html>
+{'company': 'Balkancar Hebar', 'address': '1142 Sofia', 'country': 'Bulgaria'}
+2019-01-08 18:40:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bulgaria.html>
+{'company': 'Balkancar Sredets Plc.', 'address': '4000 Plovdiv', 'country': 'Bulgaria'}
+2019-01-08 18:40:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:40:16 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:40:16 [scrapy.proxies] DEBUG: Using proxy <http://81.199.32.214:39358>, 221 proxies left
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'All Parts Comércio de Peças máquinas e equipamentos Ltda (A.L.P)', 'address': '41290-010 Pirajá', 'country': 'Brasil'}
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'Bauko Movimentação', 'address': '06298-060 Osasco, São Paulo', 'country': 'Brasil'}
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'Cam System ', 'address': '13277-210 Vila Pagano - Valinhos', 'country': 'Brasil'}
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'CMG - Comércio de Máquinas e Guindastes Ltda.', 'address': '81630-230 Vila Hauer', 'country': 'Brasil'}
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'Coelho Equipamentos Ltda  (C.E.L.) - RAC', 'address': '89254-700 Chico de Paula ', 'country': 'Brasil'}
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'Edvaldo Augusto Moreira', 'address': '12031-320  Independência Taubaté – SP', 'country': 'Brasil'}
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'Empicamp Com. Ser. Empilhadeiras Ltda (E.M.P)', 'address': '13084-630 Barão Geraldo – Campinas/SP ', 'country': 'Brasil'}
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'Empilhadeira Santana', 'address': '74463-350 Santos Dumont', 'country': 'Brasil'}
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'Empilhanor Comércio e Serviços Ltda. (E.P.N.)', 'address': '51200-040 Imbiribeira Recife – PE', 'country': 'Brasil'}
+2019-01-08 18:40:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Brasil.html>
+{'company': 'Empilhavix Comércio e Serviços Ltda', 'address': '29.164-030 Jardim Limoeiro Serra - ES', 'country': 'Brasil'}
+2019-01-08 18:40:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:40:25 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:40:25 [scrapy.proxies] DEBUG: Using proxy <http://14.192.24.2:53281>, 221 proxies left
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'Dzida doo', 'address': 'Citluk', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'DZIP Co. d.o.o', 'address': '88260 Citluk', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'Dzip company', 'address': '71210 Ilidža', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'EDNIL', 'address': '71210 Ilidza-Sarajevo', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'Ednil', 'address': '71320 Vogosca', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'Emah doo', 'address': '71000 Sarajevo', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'EMAH d.o.o', 'address': '71000 Sarajevo', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'Eurodelta', 'address': '71210 Ilidža', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'Inter-Vilicari d.o.o.', 'address': '40315 Mursko Središce', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bosnia---Herzegovina.html>
+{'company': 'Lager d.o.o.', 'address': '88240 Posušje', 'country': 'Bosnia---Herzegovina'}
+2019-01-08 18:40:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Bolivia.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:40:35 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:40:35 [scrapy.proxies] DEBUG: Using proxy <http://202.73.26.9:54471>, 221 proxies left
+2019-01-08 18:40:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bolivia.html>
+{'company': 'Imcruz Comercial', 'address': 'Santa Cruz de la Sierra', 'country': 'Bolivia'}
+2019-01-08 18:40:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Belgium.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:40:43 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:40:43 [scrapy.proxies] DEBUG: Using proxy <http://80.95.97.142:40177>, 221 proxies left
+2019-01-08 18:40:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Bangladesh.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:40:51 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:40:51 [scrapy.proxies] DEBUG: Using proxy <http://118.174.220.161:59822>, 221 proxies left
+2019-01-08 18:40:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bangladesh.html>
+{'company': 'Industrial Engineering Services Ltd', 'address': '1206 Dhaka', 'country': 'Bangladesh'}
+2019-01-08 18:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Bahrain.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:41:00 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:41:00 [scrapy.proxies] DEBUG: Using proxy <http://116.193.221.86:43764>, 221 proxies left
+2019-01-08 18:41:00 [scrapy.extensions.logstats] INFO: Crawled 109 pages (at 7 pages/min), scraped 449 items (at 31 items/min)
+2019-01-08 18:41:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Bahrain.html>
+{'company': 'Al-Jazeera Industrial Services ', 'address': '828 Isatown', 'country': 'Bahrain'}
+2019-01-08 18:41:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Austria.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:41:08 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:41:08 [scrapy.proxies] DEBUG: Using proxy <http://93.78.181.6:42946>, 221 proxies left
+2019-01-08 18:41:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:41:15 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:41:15 [scrapy.proxies] DEBUG: Using proxy <http://87.76.10.119:53281>, 221 proxies left
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'A. G. PRUDEN & Cía. S. A. ', 'address': 'B1640HFW Buenos Aires', 'country': 'Argentina'}
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'Alfamaq - Venturi S.A.', 'address': 'B1704EIV Buenos Aires', 'country': 'Argentina'}
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'Autoelevadores Ancoil', 'address': 'C1282AFB Ciudad Aut. de Buenos Aires', 'country': 'Argentina'}
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'Autoelevadores AS S.R.L.', 'address': '1618 Ricardo Rojas Tigre, Pcia. de Buenos Aires', 'country': 'Argentina'}
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'Autoelevadores Belcar S.R.L.', 'address': '1407 Capital Federal', 'country': 'Argentina'}
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'Autoelevadores Castro', 'address': '1870 Avellaneda, Buenos Aires', 'country': 'Argentina'}
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'Autoelevadores Montenegro', 'address': '1640 Buenos Aires', 'country': 'Argentina'}
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'Autoelevadores Oeste', 'address': 'Buenos Aires', 'country': 'Argentina'}
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'Autoelevadores Oliveira', 'address': 'B1640HFV Buenos Aires', 'country': 'Argentina'}
+2019-01-08 18:41:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Argentina.html>
+{'company': 'Autoelevadores Santander', 'address': 'C1406HXZ Capital Federal, Buenos Aires', 'country': 'Argentina'}
+2019-01-08 18:41:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Angola.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:41:27 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:41:27 [scrapy.proxies] DEBUG: Using proxy <http://41.208.20.50:8888>, 221 proxies left
+2019-01-08 18:41:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Angola.html>
+{'company': 'Asiafrica', 'address': 'Luanda', 'country': 'Angola'}
+2019-01-08 18:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Andorra.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:41:35 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:41:35 [scrapy.proxies] DEBUG: Using proxy <http://138.0.89.139:42147>, 221 proxies left
+2019-01-08 18:41:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Andorra.html>
+{'company': 'Garatge Nogreda', 'address': 'AD500 Andorra la Vella', 'country': 'Andorra'}
+2019-01-08 18:41:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:41:48 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-08 18:41:48 [scrapy.proxies] DEBUG: Using proxy <http://77.232.137.35:59578>, 221 proxies left
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': 'A & M Company,Sarl', 'address': '16405 Hydra', 'country': 'Algeria'}
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': 'ACM,Sarl', 'address': '31130 Bir El djir', 'country': 'Algeria'}
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': "ALFON Algérienne des Fonderies d'Oran,Spa", 'address': '31025 Oran', 'country': 'Algeria'}
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': 'B.A.T.P & Industries,Sarl', 'address': '16302 Dely Ibrahim', 'country': 'Algeria'}
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': 'BMA', 'address': '16310 Oued Smar', 'country': 'Algeria'}
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': 'BMA Bergerat Monnoyeur Algérie,Spa', 'address': '30500 Hassi Mesaoud', 'country': 'Algeria'}
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': 'CAC Comptoir Africain du Caoutchouc,Sarl', 'address': '16108 Hamma Anassers', 'country': 'Algeria'}
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': 'CMAM Construction Matériel Avicole Mesra', 'address': '27255 Mesra', 'country': 'Algeria'}
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': 'CYCMA Entreprise de Cycles Motocycles & Applications,Spa', 'address': '25000 Constantine', 'country': 'Algeria'}
+2019-01-08 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Algeria.html>
+{'company': 'ENASER Entreprise Nord Africaine des Services', 'address': '16100 Alger centre', 'country': 'Algeria'}
+2019-01-08 18:41:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.supralift.com/uk/forklift-truck-dealers/Albania.html> (referer: https://www.supralift.com/uk/forklift-truck-dealers/country-list)
+2019-01-08 18:41:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.supralift.com/uk/forklift-truck-dealers/Albania.html>
+{'company': 'CCE Sh.p.K', 'address': 'Tirana', 'country': 'Albania'}
+2019-01-08 18:41:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-01-08 18:41:59 [scrapy.extensions.feedexport] INFO: Stored csv feed (473 items) in: /home/coffeeincodeout/developer/dealer-crawler/dealer/dealer/tmp/grayeddealer.csv
+2019-01-08 18:41:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 51436,
+ 'downloader/request_count': 115,
+ 'downloader/request_method_count/GET': 115,
+ 'downloader/response_bytes': 876214,
+ 'downloader/response_count': 115,
+ 'downloader/response_status_count/200': 115,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 1, 8, 23, 41, 59, 954057),
+ 'item_scraped_count': 473,
+ 'log_count/DEBUG': 820,
+ 'log_count/INFO': 26,
+ 'memusage/max': 64237568,
+ 'memusage/startup': 52572160,
+ 'request_depth_max': 1,
+ 'response_received_count': 115,
+ 'scheduler/dequeued': 115,
+ 'scheduler/dequeued/memory': 115,
+ 'scheduler/enqueued': 115,
+ 'scheduler/enqueued/memory': 115,
+ 'start_time': datetime.datetime(2019, 1, 8, 23, 24, 0, 750217)}
+2019-01-08 18:41:59 [scrapy.core.engine] INFO: Spider closed (finished)
